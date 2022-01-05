@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_hf8LEG3CEeyJ06eVbuUSkA" name="DesignPattern2">
+    <eAnnotations xmi:id="_hqPWkG3CEeyJ06eVbuUSkA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_hqTA8G3CEeyJ06eVbuUSkA" source="codegen">
+        <details xmi:id="_hqTA8W3CEeyJ06eVbuUSkA" key="codegenDirectory" value="/DesignPattern/src/main/java"/>
+        <details xmi:id="_h6nU4G3CEeyJ06eVbuUSkA" key="AssociatedSourceCode" value="/DesignPattern/src/main/java/decorator/Application.java;899872927/1;/DesignPattern/src/main/java/decorator/AssuranceDecorator.java;2163057498/1;/DesignPattern/src/main/java/decorator/AssuranceVoiture.java;465238869/1;/DesignPattern/src/main/java/decorator/BrisDeGlace.java;3949496166/1;/DesignPattern/src/main/java/decorator/DammageAndCollision.java;2918474579/1;/DesignPattern/src/main/java/decorator/Incendie.java;2794223257/1;/DesignPattern/src/main/java/decorator/Inondation.java;1743315592/1;/DesignPattern/src/main/java/decorator/ResponsabiliteCivile.java;1500163497/1;/DesignPattern/src/main/java/decorator/Vol.java;3711742931/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_h0uvUG3CEeyJ06eVbuUSkA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_h0vWYG3CEeyJ06eVbuUSkA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_h0vWYW3CEeyJ06eVbuUSkA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_h0vWYm3CEeyJ06eVbuUSkA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_h0vWY23CEeyJ06eVbuUSkA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_h0vWZG3CEeyJ06eVbuUSkA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_h0vWZW3CEeyJ06eVbuUSkA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_h0vWZm3CEeyJ06eVbuUSkA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_h0vWZ23CEeyJ06eVbuUSkA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_h0xLkG3CEeyJ06eVbuUSkA" name="decorator">
+      <packagedElement xmi:type="uml:Class" xmi:id="_h1Rh4G3CEeyJ06eVbuUSkA" name="AssuranceDecorator" isAbstract="true">
+        <generalization xmi:id="_h2qpA23CEeyJ06eVbuUSkA" general="_h1XogG3CEeyJ06eVbuUSkA"/>
+        <ownedAttribute xmi:id="_h21BEG3CEeyJ06eVbuUSkA" name="assuranceVoiture" visibility="protected" type="_h1XogG3CEeyJ06eVbuUSkA" association="_h2_ZIG3CEeyJ06eVbuUSkA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h24EYG3CEeyJ06eVbuUSkA" name="AssuranceDecorator" specification="_h2qB8G3CEeyJ06eVbuUSkA">
+          <ownedParameter xmi:id="_h24EYW3CEeyJ06eVbuUSkA" name="assuranceVoiture" type="_h1XogG3CEeyJ06eVbuUSkA"/>
+          <ownedParameter xmi:id="_h24EYm3CEeyJ06eVbuUSkA" type="_h1Rh4G3CEeyJ06eVbuUSkA" direction="return"/>
+          <language>java</language>
+          <body>this.assuranceVoiture = assuranceVoiture;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_h1T-IG3CEeyJ06eVbuUSkA" name="cout" isAbstract="true">
+          <ownedParameter xmi:id="_h1T-IW3CEeyJ06eVbuUSkA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_h1UlMG3CEeyJ06eVbuUSkA" name="description" isAbstract="true"/>
+        <ownedOperation xmi:id="_h2qB8G3CEeyJ06eVbuUSkA" name="AssuranceDecorator" method="_h24EYG3CEeyJ06eVbuUSkA">
+          <eAnnotations xmi:id="_h2qpAG3CEeyJ06eVbuUSkA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_h2qpAW3CEeyJ06eVbuUSkA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_h2qpAm3CEeyJ06eVbuUSkA" type="_h1Rh4G3CEeyJ06eVbuUSkA" direction="return"/>
+          <ownedParameter xmi:id="_h2qB8W3CEeyJ06eVbuUSkA" name="assuranceVoiture" type="_h1XogG3CEeyJ06eVbuUSkA"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_h1XogG3CEeyJ06eVbuUSkA" name="AssuranceVoiture" isAbstract="true">
+        <ownedOperation xmi:id="_h1Y2oG3CEeyJ06eVbuUSkA" name="cout" isAbstract="true">
+          <ownedParameter xmi:id="_h1Y2oW3CEeyJ06eVbuUSkA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_h1ZdsG3CEeyJ06eVbuUSkA" name="description" isAbstract="true"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_h1ZdsW3CEeyJ06eVbuUSkA" name="BrisDeGlace">
+        <generalization xmi:id="_h2r3IG3CEeyJ06eVbuUSkA" general="_h1Rh4G3CEeyJ06eVbuUSkA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h25SgG3CEeyJ06eVbuUSkA" name="BrisDeGlace" specification="_h2rQEG3CEeyJ06eVbuUSkA">
+          <ownedParameter xmi:id="_h25SgW3CEeyJ06eVbuUSkA" name="assuranceVoiture" type="_h1XogG3CEeyJ06eVbuUSkA"/>
+          <ownedParameter xmi:id="_h25Sgm3CEeyJ06eVbuUSkA" type="_h1ZdsW3CEeyJ06eVbuUSkA" direction="return"/>
+          <language>java</language>
+          <body>super(assuranceVoiture);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h255kG3CEeyJ06eVbuUSkA" name="cout" specification="_h1bS4G3CEeyJ06eVbuUSkA">
+          <ownedParameter xmi:id="_h255kW3CEeyJ06eVbuUSkA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return assuranceVoiture.cout() + 700;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h255km3CEeyJ06eVbuUSkA" name="description" specification="_h1dIEW3CEeyJ06eVbuUSkA">
+          <language>java</language>
+          <body>System.out.println(&quot;Une Assurance Decorator du Bris de glace&quot;);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_h1bS4G3CEeyJ06eVbuUSkA" name="cout" method="_h255kG3CEeyJ06eVbuUSkA">
+          <ownedParameter xmi:id="_h1b58G3CEeyJ06eVbuUSkA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_h1dIEW3CEeyJ06eVbuUSkA" name="description" method="_h255km3CEeyJ06eVbuUSkA"/>
+        <ownedOperation xmi:id="_h2rQEG3CEeyJ06eVbuUSkA" name="BrisDeGlace" method="_h25SgG3CEeyJ06eVbuUSkA">
+          <eAnnotations xmi:id="_h2rQEm3CEeyJ06eVbuUSkA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_h2rQE23CEeyJ06eVbuUSkA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_h2rQEW3CEeyJ06eVbuUSkA" name="assuranceVoiture" type="_h1XogG3CEeyJ06eVbuUSkA"/>
+          <ownedParameter xmi:id="_h2rQFG3CEeyJ06eVbuUSkA" type="_h1ZdsW3CEeyJ06eVbuUSkA" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_h1gLYG3CEeyJ06eVbuUSkA" name="DammageAndCollision">
+        <generalization xmi:id="_h2tFQG3CEeyJ06eVbuUSkA" general="_h1Rh4G3CEeyJ06eVbuUSkA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h26goG3CEeyJ06eVbuUSkA" name="DammageAndCollision" specification="_h2seMG3CEeyJ06eVbuUSkA">
+          <ownedParameter xmi:id="_h26goW3CEeyJ06eVbuUSkA" name="assuranceVoiture" type="_h1XogG3CEeyJ06eVbuUSkA"/>
+          <ownedParameter xmi:id="_h26gom3CEeyJ06eVbuUSkA" type="_h1gLYG3CEeyJ06eVbuUSkA" direction="return"/>
+          <language>java</language>
+          <body>super(assuranceVoiture);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h26go23CEeyJ06eVbuUSkA" name="cout" specification="_h1hZgG3CEeyJ06eVbuUSkA">
+          <ownedParameter xmi:id="_h26gpG3CEeyJ06eVbuUSkA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return assuranceVoiture.cout() + 650;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h26gpW3CEeyJ06eVbuUSkA" name="description" specification="_h1inom3CEeyJ06eVbuUSkA">
+          <language>java</language>
+          <body>System.out.println(&quot;Une Assurance Decorator du dommage et Collision&quot;);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_h1hZgG3CEeyJ06eVbuUSkA" name="cout" method="_h26go23CEeyJ06eVbuUSkA">
+          <ownedParameter xmi:id="_h1iAkG3CEeyJ06eVbuUSkA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_h1inom3CEeyJ06eVbuUSkA" name="description" method="_h26gpW3CEeyJ06eVbuUSkA"/>
+        <ownedOperation xmi:id="_h2seMG3CEeyJ06eVbuUSkA" name="DammageAndCollision" method="_h26goG3CEeyJ06eVbuUSkA">
+          <eAnnotations xmi:id="_h2seMm3CEeyJ06eVbuUSkA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_h2seM23CEeyJ06eVbuUSkA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_h2seMW3CEeyJ06eVbuUSkA" name="assuranceVoiture" type="_h1XogG3CEeyJ06eVbuUSkA"/>
+          <ownedParameter xmi:id="_h2seNG3CEeyJ06eVbuUSkA" type="_h1gLYG3CEeyJ06eVbuUSkA" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_h1ngIG3CEeyJ06eVbuUSkA" name="Incendie">
+        <generalization xmi:id="_h2u6cG3CEeyJ06eVbuUSkA" general="_h1Rh4G3CEeyJ06eVbuUSkA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h27HsG3CEeyJ06eVbuUSkA" name="Incendie" specification="_h2tsUG3CEeyJ06eVbuUSkA">
+          <ownedParameter xmi:id="_h27HsW3CEeyJ06eVbuUSkA" name="assuranceVoiture" type="_h1XogG3CEeyJ06eVbuUSkA"/>
+          <ownedParameter xmi:id="_h27Hsm3CEeyJ06eVbuUSkA" type="_h1ngIG3CEeyJ06eVbuUSkA" direction="return"/>
+          <language>java</language>
+          <body>super(assuranceVoiture);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h27Hs23CEeyJ06eVbuUSkA" name="cout" specification="_h1oHMG3CEeyJ06eVbuUSkA">
+          <ownedParameter xmi:id="_h27HtG3CEeyJ06eVbuUSkA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return assuranceVoiture.cout() + 600;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h27uwG3CEeyJ06eVbuUSkA" name="description" specification="_h1qjcm3CEeyJ06eVbuUSkA">
+          <language>java</language>
+          <body>System.out.println(&quot;Une Assurance Decorator d'Incendie&quot;);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_h1oHMG3CEeyJ06eVbuUSkA" name="cout" method="_h27Hs23CEeyJ06eVbuUSkA">
+          <ownedParameter xmi:id="_h1pVUG3CEeyJ06eVbuUSkA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_h1qjcm3CEeyJ06eVbuUSkA" name="description" method="_h27uwG3CEeyJ06eVbuUSkA"/>
+        <ownedOperation xmi:id="_h2tsUG3CEeyJ06eVbuUSkA" name="Incendie" method="_h27HsG3CEeyJ06eVbuUSkA">
+          <eAnnotations xmi:id="_h2uTYG3CEeyJ06eVbuUSkA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_h2uTYW3CEeyJ06eVbuUSkA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_h2tsUW3CEeyJ06eVbuUSkA" name="assuranceVoiture" type="_h1XogG3CEeyJ06eVbuUSkA"/>
+          <ownedParameter xmi:id="_h2uTYm3CEeyJ06eVbuUSkA" type="_h1ngIG3CEeyJ06eVbuUSkA" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_h1s_sG3CEeyJ06eVbuUSkA" name="Inondation">
+        <generalization xmi:id="_h2wIkG3CEeyJ06eVbuUSkA" general="_h1Rh4G3CEeyJ06eVbuUSkA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h27uwW3CEeyJ06eVbuUSkA" name="Inondation" specification="_h2vhgG3CEeyJ06eVbuUSkA">
+          <ownedParameter xmi:id="_h27uwm3CEeyJ06eVbuUSkA" name="assuranceVoiture" type="_h1XogG3CEeyJ06eVbuUSkA"/>
+          <ownedParameter xmi:id="_h27uw23CEeyJ06eVbuUSkA" type="_h1s_sG3CEeyJ06eVbuUSkA" direction="return"/>
+          <language>java</language>
+          <body>super(assuranceVoiture);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h27uxG3CEeyJ06eVbuUSkA" name="cout" specification="_h1wDAG3CEeyJ06eVbuUSkA">
+          <ownedParameter xmi:id="_h27uxW3CEeyJ06eVbuUSkA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return assuranceVoiture.cout() + 550;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h28V0G3CEeyJ06eVbuUSkA" name="description" specification="_h1x4Mm3CEeyJ06eVbuUSkA">
+          <language>java</language>
+          <body>System.out.println(&quot;Une Assurance Decorator d'Inondation&quot;);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_h1wDAG3CEeyJ06eVbuUSkA" name="cout" method="_h27uxG3CEeyJ06eVbuUSkA">
+          <ownedParameter xmi:id="_h1wqEG3CEeyJ06eVbuUSkA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_h1x4Mm3CEeyJ06eVbuUSkA" name="description" method="_h28V0G3CEeyJ06eVbuUSkA"/>
+        <ownedOperation xmi:id="_h2vhgG3CEeyJ06eVbuUSkA" name="Inondation" method="_h27uwW3CEeyJ06eVbuUSkA">
+          <eAnnotations xmi:id="_h2vhgm3CEeyJ06eVbuUSkA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_h2vhg23CEeyJ06eVbuUSkA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_h2vhgW3CEeyJ06eVbuUSkA" name="assuranceVoiture" type="_h1XogG3CEeyJ06eVbuUSkA"/>
+          <ownedParameter xmi:id="_h2vhhG3CEeyJ06eVbuUSkA" type="_h1s_sG3CEeyJ06eVbuUSkA" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_h107gG3CEeyJ06eVbuUSkA" name="ResponsabiliteCivile">
+        <generalization xmi:id="_h2wvoG3CEeyJ06eVbuUSkA" general="_h1XogG3CEeyJ06eVbuUSkA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h28V0W3CEeyJ06eVbuUSkA" name="cout" specification="_h11ikG3CEeyJ06eVbuUSkA">
+          <ownedParameter xmi:id="_h28V0m3CEeyJ06eVbuUSkA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return 1000;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h2884G3CEeyJ06eVbuUSkA" name="description" specification="_h12ws23CEeyJ06eVbuUSkA">
+          <language>java</language>
+          <body>System.out.println(&quot;Une Assurance de la responsabilite civile&quot;);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_h11ikG3CEeyJ06eVbuUSkA" name="cout" method="_h28V0W3CEeyJ06eVbuUSkA">
+          <ownedParameter xmi:id="_h12JoG3CEeyJ06eVbuUSkA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_h12ws23CEeyJ06eVbuUSkA" name="description" method="_h2884G3CEeyJ06eVbuUSkA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_h14l4G3CEeyJ06eVbuUSkA" name="Vol">
+        <generalization xmi:id="_h20aAG3CEeyJ06eVbuUSkA" general="_h1Rh4G3CEeyJ06eVbuUSkA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h2884W3CEeyJ06eVbuUSkA" name="Vol" specification="_h2wvoW3CEeyJ06eVbuUSkA">
+          <ownedParameter xmi:id="_h2884m3CEeyJ06eVbuUSkA" name="assuranceVoiture" type="_h1XogG3CEeyJ06eVbuUSkA"/>
+          <ownedParameter xmi:id="_h288423CEeyJ06eVbuUSkA" type="_h14l4G3CEeyJ06eVbuUSkA" direction="return"/>
+          <language>java</language>
+          <body>super(assuranceVoiture);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h2885G3CEeyJ06eVbuUSkA" name="cout" specification="_h16bEG3CEeyJ06eVbuUSkA">
+          <ownedParameter xmi:id="_h2885W3CEeyJ06eVbuUSkA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return assuranceVoiture.cout() + 500;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h29j8G3CEeyJ06eVbuUSkA" name="description" specification="_h17pMG3CEeyJ06eVbuUSkA">
+          <language>java</language>
+          <body>System.out.println(&quot;Une Assurance Decorator du Vol&quot;);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_h16bEG3CEeyJ06eVbuUSkA" name="cout" method="_h2885G3CEeyJ06eVbuUSkA">
+          <ownedParameter xmi:id="_h16bEW3CEeyJ06eVbuUSkA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_h17pMG3CEeyJ06eVbuUSkA" name="description" method="_h29j8G3CEeyJ06eVbuUSkA"/>
+        <ownedOperation xmi:id="_h2wvoW3CEeyJ06eVbuUSkA" name="Vol" method="_h2884W3CEeyJ06eVbuUSkA">
+          <eAnnotations xmi:id="_h2zy8G3CEeyJ06eVbuUSkA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_h2zy8W3CEeyJ06eVbuUSkA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_h2yk0G3CEeyJ06eVbuUSkA" name="assuranceVoiture" type="_h1XogG3CEeyJ06eVbuUSkA"/>
+          <ownedParameter xmi:id="_h2zy8m3CEeyJ06eVbuUSkA" type="_h14l4G3CEeyJ06eVbuUSkA" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_h2_ZIG3CEeyJ06eVbuUSkA" name="" memberEnd="_h2_ZIW3CEeyJ06eVbuUSkA _h21BEG3CEeyJ06eVbuUSkA">
+        <ownedEnd xmi:id="_h2_ZIW3CEeyJ06eVbuUSkA" name="" type="_h1Rh4G3CEeyJ06eVbuUSkA" association="_h2_ZIG3CEeyJ06eVbuUSkA"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_hqToAG3CEeyJ06eVbuUSkA">
+      <eAnnotations xmi:id="_hqUPEG3CEeyJ06eVbuUSkA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_hqU2IG3CEeyJ06eVbuUSkA" base_Package="_hf8LEG3CEeyJ06eVbuUSkA">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_h1b58W3CEeyJ06eVbuUSkA" base_Element="_h1bS4G3CEeyJ06eVbuUSkA"/>
+  <UMLLabProfile:Annotations xmi:id="_h1chAG3CEeyJ06eVbuUSkA" base_Element="_h1bS4G3CEeyJ06eVbuUSkA">
+    <annotations xmi:id="_h1dIEG3CEeyJ06eVbuUSkA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_h1dvIG3CEeyJ06eVbuUSkA" base_Element="_h1dIEW3CEeyJ06eVbuUSkA"/>
+  <UMLLabProfile:Annotations xmi:id="_h1eWMG3CEeyJ06eVbuUSkA" base_Element="_h1dIEW3CEeyJ06eVbuUSkA">
+    <annotations xmi:id="_h1eWMW3CEeyJ06eVbuUSkA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_h1iAkW3CEeyJ06eVbuUSkA" base_Element="_h1hZgG3CEeyJ06eVbuUSkA"/>
+  <UMLLabProfile:Annotations xmi:id="_h1inoG3CEeyJ06eVbuUSkA" base_Element="_h1hZgG3CEeyJ06eVbuUSkA">
+    <annotations xmi:id="_h1inoW3CEeyJ06eVbuUSkA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_h1j1wG3CEeyJ06eVbuUSkA" base_Element="_h1inom3CEeyJ06eVbuUSkA"/>
+  <UMLLabProfile:Annotations xmi:id="_h1kc0G3CEeyJ06eVbuUSkA" base_Element="_h1inom3CEeyJ06eVbuUSkA">
+    <annotations xmi:id="_h1kc0W3CEeyJ06eVbuUSkA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_h1p8YG3CEeyJ06eVbuUSkA" base_Element="_h1oHMG3CEeyJ06eVbuUSkA"/>
+  <UMLLabProfile:Annotations xmi:id="_h1qjcG3CEeyJ06eVbuUSkA" base_Element="_h1oHMG3CEeyJ06eVbuUSkA">
+    <annotations xmi:id="_h1qjcW3CEeyJ06eVbuUSkA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_h1rKgG3CEeyJ06eVbuUSkA" base_Element="_h1qjcm3CEeyJ06eVbuUSkA"/>
+  <UMLLabProfile:Annotations xmi:id="_h1rKgW3CEeyJ06eVbuUSkA" base_Element="_h1qjcm3CEeyJ06eVbuUSkA">
+    <annotations xmi:id="_h1rxkG3CEeyJ06eVbuUSkA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_h1xRIG3CEeyJ06eVbuUSkA" base_Element="_h1wDAG3CEeyJ06eVbuUSkA"/>
+  <UMLLabProfile:Annotations xmi:id="_h1x4MG3CEeyJ06eVbuUSkA" base_Element="_h1wDAG3CEeyJ06eVbuUSkA">
+    <annotations xmi:id="_h1x4MW3CEeyJ06eVbuUSkA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_h1yfQG3CEeyJ06eVbuUSkA" base_Element="_h1x4Mm3CEeyJ06eVbuUSkA"/>
+  <UMLLabProfile:Annotations xmi:id="_h1zGUG3CEeyJ06eVbuUSkA" base_Element="_h1x4Mm3CEeyJ06eVbuUSkA">
+    <annotations xmi:id="_h1zGUW3CEeyJ06eVbuUSkA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_h12wsG3CEeyJ06eVbuUSkA" base_Element="_h11ikG3CEeyJ06eVbuUSkA"/>
+  <UMLLabProfile:Annotations xmi:id="_h12wsW3CEeyJ06eVbuUSkA" base_Element="_h11ikG3CEeyJ06eVbuUSkA">
+    <annotations xmi:id="_h12wsm3CEeyJ06eVbuUSkA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_h13XwG3CEeyJ06eVbuUSkA" base_Element="_h12ws23CEeyJ06eVbuUSkA"/>
+  <UMLLabProfile:Annotations xmi:id="_h13-0G3CEeyJ06eVbuUSkA" base_Element="_h12ws23CEeyJ06eVbuUSkA">
+    <annotations xmi:id="_h13-0W3CEeyJ06eVbuUSkA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_h17CIG3CEeyJ06eVbuUSkA" base_Element="_h16bEG3CEeyJ06eVbuUSkA"/>
+  <UMLLabProfile:Annotations xmi:id="_h17CIW3CEeyJ06eVbuUSkA" base_Element="_h16bEG3CEeyJ06eVbuUSkA">
+    <annotations xmi:id="_h17CIm3CEeyJ06eVbuUSkA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_h17pMW3CEeyJ06eVbuUSkA" base_Element="_h17pMG3CEeyJ06eVbuUSkA"/>
+  <UMLLabProfile:Annotations xmi:id="_h18QQG3CEeyJ06eVbuUSkA" base_Element="_h17pMG3CEeyJ06eVbuUSkA">
+    <annotations xmi:id="_h18QQW3CEeyJ06eVbuUSkA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_h22PMG3CEeyJ06eVbuUSkA" base_Element="_h21BEG3CEeyJ06eVbuUSkA"/>
+  <UMLLabProfile:Reference xmi:id="_h3AnQG3CEeyJ06eVbuUSkA" base_Element="_h2_ZIG3CEeyJ06eVbuUSkA"/>
+</xmi:XMI>
